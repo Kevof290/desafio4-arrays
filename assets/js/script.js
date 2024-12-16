@@ -15,10 +15,10 @@ const visualPropiedades = (propiedad, contenedorId) => {
         <p><i class="fa-solid fa-bed"></i> ${propiedad.habitaciones} habitaciones.</p>
         <p><i class="fa-solid fa-toilet"></i> ${propiedad.baños} baños.</p>
         <h5>${propiedad.costo}</h5>
-        <i class="${propiedad.smoke ? 'fa-solid  fa-smoking' : 'fa-solid fa-ban-smoking' }"></i>
-        <p>${propiedad.smoke ? 'Permitido fumar' : 'Prohibido fumar'}</p>
-        <i class="${propiedad.pets ? 'fa-solid fa-paw' : 'fa-solid fa-ban'}"></i>
-        <p>${propiedad.pets ? 'Se permiten mascotas' : 'No se permiten mascotas'}</p>
+         <p class="${propiedad.smoke ? 'text-success' : 'text-danger'}">
+                <i class="fas ${propiedad.smoke ? 'fa-smoking' : 'fa-smoking-ban'}"></i> ${propiedad.smoke ? 'Se puede fumar' : 'Prohibido fumar'}</p>
+        <p class="${propiedad.pets ? 'text-success' : 'text-danger'}">
+                <i class="fas ${propiedad.pets ? 'fa-paw' : 'fa-ban'}"></i> ${propiedad.pets ? 'Mascotas permitidas' : 'No se permiten mascotas'}</p>
         </div>`
 
         card.innerHTML = cardContent;
