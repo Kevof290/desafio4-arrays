@@ -1,0 +1,39 @@
+.main-section {
+    background-image: url('https://the5thcrewmember.com/wp-content/uploads/2019/09/img_5392.jpg?w=1400&h=400&crop=1');
+    background-size: cover; /* La imagen cubrirá todo el ancho y largo */
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.card {
+    height: 100px;
+}
+
+.card img{
+    height: 250px;
+}
+
+#content {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.title {
+    background-image: url('https://the5thcrewmember.com/wp-content/uploads/2019/09/img_5392.jpg?w=1400&h=400&crop=1');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
